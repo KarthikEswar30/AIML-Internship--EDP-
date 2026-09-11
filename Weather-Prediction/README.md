@@ -56,3 +56,26 @@ The models use the engineered weather dataset created from Open-Meteo historical
 ## Next Step
 
 The next stage will focus on time-series evaluation, backtesting and comparing model predictions with actual weather data.
+
+## Week 6
+
+This week focused on evaluating the weather prediction models using time-series backtesting.
+
+### Work Done
+- Loaded the processed weather dataset
+- Used the Linear Regression model from Week 5
+- Used ARIMA for time-series forecasting
+- Performed walk-forward backtesting
+- Generated predictions for historical dates
+- Compared predictions with actual weather values
+- Calculated MAE, MSE and RMSE
+- Analyzed prediction errors
+- Saved backtesting results as CSV
+
+### Evaluation
+The models were evaluated using historical data while maintaining chronological order to avoid future data leakage.
+
+### Output
+Backtesting results are stored in:
+
+`Week6/results/backtest_results.csv`
