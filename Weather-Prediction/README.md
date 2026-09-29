@@ -79,3 +79,48 @@ The models were evaluated using historical data while maintaining chronological 
 Backtesting results are stored in:
 
 `Week6/results/backtest_results.csv`
+
+## Week 7
+
+This week focused on evaluating historical weather forecasts against actual historical weather data.
+
+### Work Done
+- Retrieved archived forecast data using the Open-Meteo Previous Model Runs API
+- Evaluated 1-day, 3-day and 7-day forecast lead times
+- Used historical weather data as the reference dataset
+- Converted hourly forecast values into daily maximum temperature forecasts
+- Compared forecasts with actual maximum temperatures
+- Calculated MAE, MSE and RMSE
+- Analyzed forecast errors
+- Visualized forecast performance
+- Saved forecast evaluation results
+
+### Output
+Forecast evaluation results are stored in:
+
+`Week7/results/forecast_evaluation.csv`
+
+## Week 8
+
+This week focused on deploying the trained weather prediction model as a Streamlit application.
+
+### Work Done
+- Loaded the trained Linear Regression model
+- Connected the model with the processed weather dataset
+- Created a Streamlit application
+- Added date-based prediction
+- Displayed next-day maximum temperature
+- Displayed weather information used for prediction
+- Added model performance information
+- Added historical backtest visualization
+
+### Application
+The Streamlit application is located at:
+
+`Week8/app/app.py`
+
+### Model
+The application uses the trained Linear Regression model from Week 5.
+
+### Next Step
+The project can be extended into a full web-based weather prediction system with live weather inputs, prediction reliability, forecast comparison and a more advanced user interface.
